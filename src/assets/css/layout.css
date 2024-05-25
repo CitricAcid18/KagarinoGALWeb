@@ -1,0 +1,61 @@
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--root-white);
+    width: 100%;
+    height: 10vh;
+}
+
+.head .logo img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20vw;
+}
+
+.head .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 21vw;
+    height: 7vh;
+}
+
+.head .buttons .bt1,
+.bt2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 6vh;
+    border-radius: 5px;
+}
+
+.head .buttons .bt1 {
+    background-color: var(--root-dark-white);
+    cursor: pointer;
+    transition:  0.5s;
+}
+
+.head .buttons .bt1:hover{
+    background-color: #cccccc;
+}
+
+.head .buttons .bt2 {
+    background-color: var(--root-basic-pink);
+    cursor: pointer;
+    box-shadow:
+        0px 0px 2.2px rgba(0, 0, 0, 0.034),
+        0px 0px 5.3px rgba(0, 0, 0, 0.048),
+        0px 0px 10px rgba(0, 0, 0, 0.06),
+        0px 0px 17.9px rgba(0, 0, 0, 0.072),
+        0px 0px 33.4px rgba(0, 0, 0, 0.086),
+        0px 0px 80px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.head .buttons .bt2:hover{
+    background-color: #fc6b90;
+}
