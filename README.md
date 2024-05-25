@@ -1,6 +1,6 @@
 # KagarinoGALWeb
 
-This template should help get you started developing with Vue 3 in Vite.
+此项目为KagarinoGAL的前端项目
 
 ## Recommended IDE Setup
 
@@ -26,8 +26,3 @@ yarn
 yarn dev
 ```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-yarn build
-```
