@@ -67,3 +67,50 @@
 .head .buttons .bt2:active{
     background-color: #ff638a;
 }
+
+
+.under{
+    background-color: #F4F7FA;
+    width: 100%;
+    height: 20vh;
+}
+
+.under .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.under .box h2{
+    font-weight: 300;
+    font-size: 23px;
+}
+
+.under .box a{
+    font-weight: 200;
+    font-size: 16px;
+    color: #6b6b6b;
+}
+
+.under p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #6b6b6b;
+    text-align: center;
+}
+
+.under p a{
+    margin-right: 12px;
+}
+
+
+.under p a:first-child span{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.under p a:nth-child(2),:nth-child(3) span{
+    font-size: 15px;
+}
+
