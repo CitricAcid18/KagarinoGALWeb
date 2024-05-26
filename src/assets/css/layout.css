@@ -81,6 +81,12 @@
     justify-content: space-around;
     align-items: center;
 }
+.under .box .information, .friends, .uwants{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .under .box h2{
     font-weight: 300;

@@ -44,7 +44,7 @@
                 </ul>
             </div>
         </div>
-        <p>Powered by <a href="#"><span>KAIO Team</span><br></a> <a href="#"><span>ICP备案 12345678</span></a><a href="#"><span>公网安备 12345678</span></a></p>
+        <p>Powered by <a href="#"><span>KAIO Team</span></a></p>
     </div>
 </template>
 
@@ -53,7 +53,7 @@ import { ref } from 'vue'
 import xx from 'element-plus';
 const count = ref(0)
 const load = () => {
-    if (count.value > 10){
+    if (count.value > 30){
         return
     }
     count.value += 2
