@@ -29,17 +29,21 @@
     align-items: center;
     justify-content: center;
     width: 8vw;
-    height: 6vh;
+    height: 5.5vh;
     border-radius: 5px;
 }
 
 .head .buttons .bt1 {
-    background-color: var(--root-dark-white);
+    border: #cccccc 1px solid;
     cursor: pointer;
-    transition:  0.5s;
+    transition:  0.3s;
 }
 
 .head .buttons .bt1:hover{
+    background-color: #e6e6e6;
+}
+
+.head .buttons .bt1:active{
     background-color: #cccccc;
 }
 
@@ -57,5 +61,9 @@
 }
 
 .head .buttons .bt2:hover{
-    background-color: #fc6b90;
+    background-color: #ff7d9e;
+}
+
+.head .buttons .bt2:active{
+    background-color: #ff638a;
 }
