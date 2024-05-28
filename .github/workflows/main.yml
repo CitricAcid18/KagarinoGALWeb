@@ -3,7 +3,7 @@ name: Deploy static content to Pages
 on:
   push:
     branches: ['main']
-  workflow_dispatch:      
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -36,7 +36,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './dist'
+          path: './dist'  # 确保这里的路径与构建输出目录匹配
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
