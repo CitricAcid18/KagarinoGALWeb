@@ -3,11 +3,7 @@
 
     <!-- 头 -->
     <div class="head">
-        <div class="logo"><img src="/src/assets//icons/logo.png" alt=""></div>
-        <div class="buttons">
-            <div class="bt1">登录</div>
-            <div class="bt2">注册</div>
-        </div>
+        <div class="logo"><img src="/src/assets/icons/logo.png" alt=""></div>
     </div>
 
     <!-- cover -->
@@ -16,8 +12,8 @@
             <li v-for="i in count" :key="i" class="infinite-list-item">{{ i }}</li>
         </ul>
     </div>
-    <!-- under -->
 
+    <!-- under -->
     <div class="under">
         <div class="box">
             <div class="information">
