@@ -1,5 +1,5 @@
 <template>
-    <link rel="stylesheet" href="src/assets/css/layout.css">
+    <!-- <link rel="stylesheet" href="src/assets/css/layout.css"> -->
 
     <!-- 头 -->
     <div class="head">
@@ -46,6 +46,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import "/src/assets/css/layout.css"
 import xx from 'element-plus';
 const count = ref(0)
 const load = () => {

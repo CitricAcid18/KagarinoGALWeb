@@ -1,5 +1,4 @@
 <template>
-    <link rel="stylesheet" href="src/assets/css/welcomePage.css">
     <div class="head">
         <div class="logo"><img src="/src/assets/icons/logo.png" alt=""></div>
         <div class="buttons">
@@ -10,4 +9,5 @@
 </template>
 
 <script lang="ts" setup>
+import "/src/assets/css/welcomePage.css"
 </script>
