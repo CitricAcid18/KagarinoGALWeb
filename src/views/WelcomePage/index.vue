@@ -40,38 +40,8 @@
 
 <script lang="ts" setup>
 
-  import {ref} from 'vue'
-  const currentImage = ref(0)
-  const images = [
-    'src/assets/photos/game1.jpg',
-    'src/assets/photos/game2.jpg',
-    'src/assets/photos/game3.jpg'
-  ]
-
-  const advantages = [
-    {
-      id:1,
-      content:"我们网站提供了大量的galgame资源，包括经典作品、新作推荐以及独家内容。用户可以在这里找到他们感兴趣的游戏，并与其他玩家分享游戏体验。",
-      imageUrl:"src/assets/photos/img1.jpg"
-    },
-    {
-      id:2,
-      content:"我们网站拥有一个活跃的社区，玩家可以在这里发表评论、分享游戏截图、交流游戏心得。这种互动性不仅增加了用户粘性，也为玩家提供了一个互相学习和交流的平台。",
-      imageUrl:"src/assets/photos/img2.jpg"
-    },
-    {
-      id:3,
-      content:"我们网站会定期更新和维护网站内容，确保用户始终能够获得最新的游戏资源、评测和推荐。同时，网站也会及时处理用户反馈和问题，不断提升用户体验和满意度。",
-      imageUrl:"src/assets/photos/img3.jpg"
-    }
-  ]
-  const nextImage = ()=>{
-    currentImage.value = (currentImage.value + 1) % images.length
-  }
-  const prevImage = ()=>{
-    images.length - 1
-    currentImage.value = currentImage.value === 0 ? images.length - 1 : currentImage.value - 1
-  }
-
-import "/src/assets/css/welcomePage.css"
 </script>
+
+<style scoped>
+@import "/src/assets/css/welcomePage.css";
+</style>
