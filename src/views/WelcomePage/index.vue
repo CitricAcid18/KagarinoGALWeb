@@ -1,4 +1,5 @@
 <template>
+
     <link rel="stylesheet" href="src/assets/css/welcomePage.css">
     <div class="wrapper">
       <div class="head">
@@ -15,6 +16,11 @@
             <button @click="prevImage" class="image-button prev">&lt;</button>
             <button @click="nextImage" class="image-button next">&gt;</button>
           </div>
+    <div class="head">
+        <div class="logo"><img src="/src/assets/icons/logo.png" alt=""></div>
+        <div class="buttons">
+            <div class="bt1">登录</div>
+            <div class="bt2">注册</div>
         </div>
         <div class="introduce-container">
           <h3>关于我们</h3>
@@ -33,6 +39,7 @@
 </template>
 
 <script lang="ts" setup>
+
   import {ref} from 'vue'
   const currentImage = ref(0)
   const images = [
@@ -65,4 +72,6 @@
     images.length - 1
     currentImage.value = currentImage.value === 0 ? images.length - 1 : currentImage.value - 1
   }
+
+import "/src/assets/css/welcomePage.css"
 </script>
