@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     width: 100%;
     height: 100%;
 }
@@ -42,14 +42,14 @@
 .head .buttons .bt1 {
     border: #cccccc 1px solid;
     cursor: pointer;
-    transition:  0.3s;
+    transition: 0.3s;
 }
 
-.head .buttons .bt1:hover{
+.head .buttons .bt1:hover {
     background-color: #e6e6e6;
 }
 
-.head .buttons .bt1:active{
+.head .buttons .bt1:active {
     background-color: #cccccc;
 }
 
@@ -66,13 +66,16 @@
     transition: 0.3s;
 }
 
-.head .buttons .bt2:hover{
+.head .buttons .bt2:hover {
     background-color: #ff7d9e;
 }
 
-.head .buttons .bt2:active{
+.head .buttons .bt2:active {
     background-color: #ff638a;
 }
+
+
+
 
 .image-container {
     position: relative;
@@ -82,74 +85,62 @@
     padding: 10px;
 }
 
-.body{
-    width: 100%;
-
-    background-color: lightpink;
-}
-
 .image-buttons {
     position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
     pointer-events: none;
+
 }
 
 .image-button {
     position: relative;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 143, 208, 0.349);
     border: none;
     padding: 10px;
     cursor: pointer;
     pointer-events: auto;
-
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     transition: background-color 0.3s;
 }
 
+
 .image-button:hover {
-    background-color: #e0e0e0; /* 鼠标悬停时的背景色 */
+    background-color: #ff87d1d1;
+    /* 鼠标悬停时的背景色 */
 }
 
 .image-button:active {
-    background-color: #c0c0c0; /* 按钮被点击时的背景色 */
+    background-color: #ff4cbad1;
+    /* 按钮被点击时的背景色 */
 }
 
-.image-container img{
+.image-container img {
     width: 80vw;
-    height:80vh;
+    height: 80vh;
 
+    border-radius: 10px;
     user-select: none;
 }
 
 .prev {
     left: 10vw;
-    color:black;
+    color: #ffffff;
     font-size: 2vw;
 }
 
 .next {
     right: 10vw;
-    color:black;
+    color: #ffffff;
     font-size: 2vw;
 }
 
-.footer{
-    width: 100%;
-    height: 8vh;
-    margin-top:0;
 
-    background-color: black;
-    color: white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-}
-
-.introduce-container{
+.introduce-container {
     margin-top: 10vh;
     width: 100%;
     height: 80vh;
@@ -160,13 +151,12 @@
     flex-direction: column;
 }
 
-.introduce-container h3{
-    color: #F4F7FA;
-
+.introduce-container h3 {
+    color: var(--root-basic-pink);
     font-size: 2.2vw;
 }
 
-.introduce-list{
+.introduce-list {
     width: 100%;
 
     display: flex;
@@ -175,7 +165,7 @@
     align-items: center;
 }
 
-.introduce-container li{
+.introduce-container li {
     width: 80vw;
     height: 10vh;
 
@@ -186,19 +176,33 @@
     margin-top: 10vh;
 }
 
-.introduce-container li img{
+.introduce-container li img {
     height: 15vh;
     width: 15vw;
-
+    border-radius: 10px;
     user-select: none;
 }
 
-.introduce-container li span{
-    color: #6b6b6b;
+.introduce-container li span {
+    color: var(--root-dark-earthy-gray);
     font-size: 1.5vw;
     font-weight: 500;
     text-align: center;
 
-    margin-left:2vw;
+    margin-left: 2vw;
+    user-select: none;
+}
+
+.footer {
+    width: 100%;
+    height: 8vh;
+    margin-top: 0;
+
+    background-color: var(--root-light-earthy-gray);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     user-select: none;
 }
