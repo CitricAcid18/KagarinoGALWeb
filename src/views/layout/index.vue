@@ -3,7 +3,7 @@
 
     <!-- 头 -->
     <div class="head">
-        <div class="logo"><img src="/src/assets/icons/logo.png" alt=""></div>
+        <div class="logo"><img :src="logo" alt=""></div>
     </div>
 
     <!-- cover -->
@@ -46,6 +46,9 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+
+import logo from "@/assets/icons/logo.png"
+
 const count = ref(0)
 const load = () => {
     if (count.value > 30){
