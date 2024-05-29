@@ -46,8 +46,6 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import "/src/assets/css/layout.css"
-import xx from 'element-plus';
 const count = ref(0)
 const load = () => {
     if (count.value > 30){
@@ -59,7 +57,9 @@ const load = () => {
 
 </script>
 
-<style>
+<style scoped>
+@import "/src/assets/css/layout.css";
+
 .cover {
     display: flex;
     justify-content: center;

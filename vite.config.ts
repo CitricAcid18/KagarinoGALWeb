@@ -25,7 +25,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: "/KagarinoGALWeb/",  // 确保这里的路径与GitHub Pages的仓库名称匹配
+  // base: "/KagarinoGALWeb/",  // 确保这里的路径与GitHub Pages的仓库名称匹配
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
