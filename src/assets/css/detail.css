@@ -1,0 +1,100 @@
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--root-white);
+    width: 100%;
+    height: 10vh;
+}
+
+.head .logo img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20vw;
+}
+
+.cover {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 20vh;
+    background-color: #F4F7FA;
+}
+
+.introduction p {
+    font-size: 37px;
+    font-weight: 300;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+.introduction span {
+    margin-left: 30px;
+    font-weight: 300;
+    font-size: 19px;
+}
+.link a{
+    text-decoration: solid;
+    color: #0080ff;
+    margin-left: 10px;
+}
+
+.sp {
+    width: 79%;
+    border:1.5px #ffffff solid;
+}
+
+.under {
+    background-color: #F4F7FA;
+    width: 100%;
+    height: 20vh;
+}
+
+.under .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.under .box .information,
+.friends,
+.uwants {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.under .box h2 {
+    font-weight: 300;
+    font-size: 23px;
+}
+
+.under .box a {
+    font-weight: 200;
+    font-size: 16px;
+    color: #6b6b6b;
+}
+
+.under p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #6b6b6b;
+    text-align: center;
+}
+
+
+
+.under p a span {
+    font-size: 16px;
+    font-weight: 300;
+}

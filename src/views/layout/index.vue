@@ -8,8 +8,11 @@
 
     <!-- cover -->
     <div class="cover">
-        <ul v-infinite-scroll="load" class="infinite-list" style="overflow: auto">
-            <li v-for="i in count" :key="i" class="infinite-list-item">{{ i }}</li>
+        <ul v-infinite-scroll="load(dataBlocks)" class="infinite-list" style="overflow: auto">
+            <li v-for="i in dataBlocks" :key="i.id" class="infinite-list-item" @click="goToDetails(i.id, i.title)">
+                <p>{{ i.title }}</p>
+                <h6>{{ i.detail }}</h6>
+            </li>
         </ul>
     </div>
 
@@ -40,22 +43,25 @@
                 </ul>
             </div>
         </div>
-        <p>Powered by <a href="#"><span>KAIO Team</span></a></p>
+        <p>Powered by <a href="#"><span>KGIO Team</span></a></p>
     </div>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-
+import { type Data, dataBlocks } from "@/res/dataModel"
 import logo from "@/assets/icons/logo.png"
+import router from '@/router';
 
-const count = ref(0)
-const load = () => {
-    if (count.value > 30){
+
+const goToDetails = (id: number, title: string) => {
+    router.push({ name: 'Details', params: { id, title } });
+};
+
+const load = (dataBlocks: Data[]) => {
+    if (dataBlocks == null) {
         return
     }
-    count.value += 2
-    
 }
 
 </script>
@@ -67,7 +73,9 @@ const load = () => {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
 .cover .infinite-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -78,17 +86,40 @@ const load = () => {
 
 .cover .infinite-list .infinite-list-item {
     display: flex;
-    justify-content: center;
+
     align-items: center;
     flex-direction: column;
     height: 240px;
     width: 290px;
     background: var(--root-white);
     margin: 10px;
-    color: var(--el-color-primary);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.cover .infinite-list .infinite-list-item:hover {
+    background-color: #ffe3f0;
+}
+
+.cover .infinite-list .infinite-list-item:active {
+    background-color: #ffaed4;
 }
 
 .cover .infinite-list .infinite-list-item+.list-item {
     margin-top: 10px;
+}
+
+.cover .infinite-list-item p {
+    color: var(--root-basic-pink);
+    font-size: 27px;
+    font-weight: 300;
+}
+
+.cover .infinite-list-item span {
+    margin-top: 30px;
+}
+
+.cover .infinite-list-item h6 {
+    margin-top: 30px;
 }
 </style>
