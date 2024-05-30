@@ -26,9 +26,35 @@
                 </li>
             </ul>
         </div>
-        <div class="footer">
-            <p>CopyRight @KGIO 团队</p>
+        <!-- under -->
+    <div class="under">
+        <div class="box">
+            <div class="information">
+                <h2>站点信息</h2>
+                <ul>
+                    <li><a href="#">意见反馈</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="friends">
+                <h2>友情链接</h2>
+                <ul>
+                    <li><a href="#">xx</a></li>
+                    <li><a href="#">xx</a></li>
+                    <li><a href="#">xxx</a></li>
+                </ul>
+            </div>
+            <div class="uwants">
+                <h2>讨论区</h2>
+                <ul>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">参与贡献</a></li>
+                </ul>
+            </div>
         </div>
+        <p>Powered by <a href="#"><span>KAIO Team</span></a></p>
+    </div>
     </div>
 </template>
 
